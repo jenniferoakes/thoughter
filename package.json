@@ -1,0 +1,41 @@
+{
+  "name": "jordans_thoughter",
+  "version": "1.0.0",
+  "description": "this is some practice code for the thoughter assignment designed to gain practice with making a fake server and testing the ajax call",
+  "main": "conf.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenniferoakes/thoughter.git"
+  },
+  "keywords": [
+    "DOM",
+    "manipulation",
+    "Ajax",
+    "calls",
+    "mocha",
+    "karma",
+    "chai",
+    "sinon"
+  ],
+  "author": "Jennifer Oakes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenniferoakes/thoughter/issues"
+  },
+  "homepage": "https://github.com/jenniferoakes/thoughter#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "karma": "^1.5.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-mocha": "^1.3.0",
+    "mocha": "^3.2.0",
+    "sinon": "^2.0.0"
+  }
+}
