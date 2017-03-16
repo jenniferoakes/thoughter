@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "npm test"
+    "test": "karma start conf.js"
   },
   "repository": {
     "type": "git",
