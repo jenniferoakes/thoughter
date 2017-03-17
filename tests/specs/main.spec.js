@@ -49,6 +49,21 @@
         expect( articles.length ).to.equal(0);
       });
 
+      it('should add the appropriate classes and ids to the html elements the function creates', function() {
+        window.thoughter.showRecent([
+          {
+            content: ' ',
+            createTime: ' ',
+            id: ' '
+          }
+        ]);
+
+        let testElement = document.querySelector('article');
+        expect(testElement.classList.contains('panel')).to.be.true;
+        expect(testElement.classList.contains('panel-info')).to.be.true;
+        expect(testElement.hasAttribute('id')).to.be.true;
+        expect(testElement.getAttribute('id')).to.equal('thought- ');
+      });
 
 
     });
