@@ -1,6 +1,6 @@
 # Thoughter
 
-This repo is also designed to get practice for setting up process automation using Grunt. This assignment will help with understanding how to add tasks to Grunt and what basic configuration setups might be useful for future projects.
+This repo is also designed to get practice for setting up process automation using Grunt. This assignment will help with understanding how to add tasks to Grunt and what basic configuration build setups might be useful for future projects.
 
 ## Git Command Review:
 ```sh
@@ -27,10 +27,6 @@ This repo is also designed to get practice for setting up process automation usi
 
   npm install --save-dev grunt-contrib-clean
 
-    grunt
-
-    grunt copy
-
     grunt build
 
   npm install --save-dev grunt-contrib-sass
@@ -38,12 +34,21 @@ This repo is also designed to get practice for setting up process automation usi
   npm install --save-dev grunt-contrib-jshint
 
   npm install --save-dev grunt-karma
+
+  npm install jquery
 ```
 
 ## What We Are Doing:
 - [x] Added fetch-mock (**node_modules/fetch-mock/es5/client-browserified.js**) to our conf.js file and deleted sinon because and XHR does not work with a fetch call
 - [ ] Create a build directory in the project root, and make sure all of the application code will be in there once the Grunt tasks are complete
 - [x] Use plugins on Grunt website to find the right tasks for project
+- [X] Use initConfig function for Grunt
+- [X] Tell Grunt how to run tasks
+- [X] Create an alias using **gruntConfig.registerTask(  );** in order to run multiple other tasks with one terminal command
+- [X] Add jshintrc and specify what files to use jshintrc
+
+
+
 - [ ] There should be nothing else in the build directory
 - [ ] The build directory should be *cleaned* before any full build
 - [ ] All JS code must be linted (using jshint) **before** being concatenated
@@ -51,13 +56,18 @@ This repo is also designed to get practice for setting up process automation usi
 - [ ] Create an application code that includes index.html, styles in a single style.css file (including a map file), and a jQuery file
 - [ ] JQuery needs to be a dependency. Install this and track the dependency in pacakage.json. Then copy the jQuery.js file to the build/js/vendor/directory where Grunt runs
 
-- [ ] Use initConfig function for Grunt
-- [ ] Tell Grunt how to run tasks
-- [ ] Create an alias using **gruntConfig.registerTask(  );** in order to run multiple other tasks with one terminal command
-- [ ] Add jshintrc and specify what files to use jshintrc on
+
 - [ ] Make use of globbing patterns to specify paths
 - [ ] Making sure grunt can run karma, and add it to our alias
-- [ ] Challenge/Research: Attempt to concatenate all JS files into a single app.js file, and in a js directory.
+
+- [ ] Research: Attempt to concatenate all JS files into a single app.js file, and in a js directory.
+
+- [ ] Make sure things are good by running 'http-server build/'. Make sure all CSS and JS files load and check the "Network" tag in the developer console of Chrome to confirm.
+
+- [ ] Set up watch plugin with Grunt. Make sure it only watches SASS files.
+- [ ] Write tests for the new-thought.js file. Make a **new** spec file.
+- [ ] Add code coverage with Karma. See how much of the source code my tests are running and edit to increase percentage.
+
 
 By: [Jennifer Oakes](https://www.linkedin.com/in/jennifernicoleoakes/)
 
