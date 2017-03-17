@@ -13,7 +13,7 @@
       });
 
       afterEach(function() {
-        let mainElement = document.querySelector('main');
+        let mainElement = document.querySelector('main.recent');
         mainElement.parentNode.removeChild( mainElement );
       });
 
@@ -21,7 +21,7 @@
         expect( window.thoughter.showRecent ).to.be.a('function');
       });
 
-      it('should check for required properties for each array', function() {
+      it('should create articles for every thought it was given', function() {
         window.thoughter.showRecent([
           {
             content: 'Here is my thought',
@@ -29,11 +29,11 @@
             id: 'I am a human'
           }
         ]);
-        let recent = document.querySelectorAll('main.recent article');
-        expect( recent.length ).to.equal(1);
+        let articles = document.querySelectorAll('main.recent article');
+        expect( articles.length ).to.equal(1);
       });
 
-      it('should handle incorrect properties', function() {
+      it('should handle incorrect properties or corrresponding values in every article it is given', function() {
         window.thoughter.showRecent([
           {
             name: ' ',
@@ -43,11 +43,13 @@
         expect( recent.length ).to.equal(0);
       });
 
-      it('should ', function() {
+      it('should handle an empty array by creating no articles', function() {
         window.thoughter.showRecent([]);
-        let htmlElements = document.querySelectorAll('articles');
-        expect( htmlElements.length ).to.equal(0);
+        let articles = document.querySelectorAll('main.recent article');
+        expect( articles.length ).to.equal(0);
       });
+
+
 
     });
   });
