@@ -43,7 +43,7 @@ This repo is also designed to get practice for setting up process automation usi
 ## How To Create a New Build:
 1. Run **npm install --save-dev grunt** in your terminal.
 2. Create **gruntfile.js** in root directory.
-3. Install Grunt plugins to use in gruntfile.
+3. Install Grunt [plugins](https://gruntjs.com/plugins) to use in gruntfile.
 4. Install appropriate devDependencies and dependencies for project.
 5. Use initConfig function in Grunt file, and create aliases to run multiple tasks with one terminal command.
 
