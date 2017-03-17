@@ -24,22 +24,32 @@
       it('should check for required properties for each array', function() {
         window.thoughter.showRecent([
           {
-            content: ' ',
-            createTime: ' ',
-            id: ' '
+            content: 'Here is my thought',
+            createTime: '1991',
+            id: 'I am a human'
           }
         ]);
         let recent = document.querySelectorAll('main.recent article');
         expect( recent.length ).to.equal(1);
       });
 
+      it('should handle incorrect properties', function() {
+        window.thoughter.showRecent([
+          {
+            name: ' ',
+          }
+        ]);
+        let recent = document.querySelectorAll('main.recent article');
+        expect( recent.length ).to.equal(0);
+      });
+
+      it('should ', function() {
+        window.thoughter.showRecent([]);
+        let htmlElements = document.querySelectorAll('articles');
+        expect( htmlElements.length ).to.equal(0);
+      });
+
     });
-
-    describe('getRecent function', function() {
-
-    });
-
   });
-
 
 }());
