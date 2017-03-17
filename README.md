@@ -26,6 +26,10 @@ The initial files were forked from Jordan Kasper and then cloned to my own repo 
   git checkout phase-two
 
   git merge master
+
+  esc
+
+  :wq 
 ```
 
 ## Steps Completed for Reference:
@@ -34,7 +38,7 @@ The initial files were forked from Jordan Kasper and then cloned to my own repo 
 - [x] Installed karma, chai, and mocha
 - [x] Started karma in specific configuration file
 - [x] Installed [sinon](http://sinonjs.org/releases/v2.0.0/fake-xhr-and-server/) to make a fake server
-- [x] Added **node_modules/sinon/pkg/sinon-2.0.0.js** to conf.s file
+- [x] Added **node_modules/sinon/pkg/sinon-2.0.0.js** to conf.s file (needed for second function)
 - [x] Set up fixtures to add and remove a main tag before and after each test
 
 By: [Jennifer Oakes](https://www.linkedin.com/in/jennifernicoleoakes/)
