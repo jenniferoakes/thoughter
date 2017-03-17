@@ -18,7 +18,7 @@ module.exports = function configureGrunt(gruntConfig) {
       copyJquery: { //target name I created
         files: [
           {
-            cwd: 'src/js', //current working directory
+            cwd: 'node_modules/jquery/dist', //current working directory
             src: [ 'jquery.js' ],
             dest: 'build/js/vendor/',
             expand: true
