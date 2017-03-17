@@ -21,6 +21,13 @@ The initial files were forked from Jordan Kasper and then cloned to my own repo 
   npm test
 ```
 
+## Git Commands:
+```sh
+  git checkout phase-two
+
+  git merge master
+```
+
 ## Steps Completed for Reference:
 - [x] Initialized package.json & answer questions pertinent to project
 - [x] Installed mocha
