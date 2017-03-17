@@ -24,9 +24,18 @@ module.exports = function configureGrunt(gruntConfig) {
             expand: true
           }
         ]
+      },
+
+      copyJSfiles: { //target name I created
+        files: [
+          {
+            cwd: 'src/js', //current working directory
+            src: [ '*.js' ],
+            dest: 'build/js/',
+            expand: true
+          }
+        ]
       }
-
-
     },
 
     sass: { //grunt task name
