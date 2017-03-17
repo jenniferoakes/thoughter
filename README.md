@@ -40,6 +40,13 @@ This repo is also designed to get practice for setting up process automation usi
   npm install --save jquery
 ```
 
+## How To Create a New Build:
+1. Run **npm install --save-dev grunt** in your terminal.
+2. Create **gruntfile.js** in root directory.
+3. Install Grunt plugins to use in gruntfile.
+4. Install appropriate devDependencies and dependencies for project.
+5. Use initConfig function in Grunt file, and create aliases to run multiple tasks with one terminal command.
+
 ## Tasks:
 - [x] Add fetch-mock (**node_modules/fetch-mock/es5/client-browserified.js**) to  conf.js file and delete sinon because and XHR does not work with a fetch call
 - [X] Create a build directory in the project root, and make sure all of the application code will be in there once the Grunt tasks are complete
@@ -62,13 +69,6 @@ This repo is also designed to get practice for setting up process automation usi
 - [ ] Set up watch plugin with Grunt. Make sure it only watches SASS files.
 - [ ] Write tests for the new-thought.js file. Make a **new** spec file.
 - [ ] Add code coverage with Karma. See how much of the source code my tests are running and edit to increase percentage.
-
-## How To Create a New Build:
-1. Run **npm install --save-dev grunt** in your terminal.
-2. Create **gruntfile.js** in root directory.
-3. Install Grunt plugins to use in gruntfile.
-4. Install appropriate devDependencies and dependencies for project. 
-5. Use initConfig function in Grunt file, and create aliases to run multiple tasks with one terminal command.
 
 By: [Jennifer Oakes](https://www.linkedin.com/in/jennifernicoleoakes/)
 
