@@ -8,7 +8,7 @@ module.exports = function karmaConfig( config ) {
     files: [
       //the script tags that you want to put in the fake html tag
       'src/**/*.js',
-      'node_modules/sinon/pkg/sinon-2.0.0.js',
+      'node_modules/fetch-mock/es5/client-browserified.js',
       'tests/specs/**/*.js'
     ]
   });
