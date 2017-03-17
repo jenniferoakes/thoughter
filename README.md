@@ -50,15 +50,12 @@ This repo is also designed to get practice for setting up process automation usi
 - [X] The build directory should be *cleaned* before any full build
 - [X] Make use of globbing patterns to specify paths
 - [X] Make sure grunt can run karma, and add it alias
-
-- [ ] There should be nothing else in the build directory
+- [X] There should be nothing else in the build directory
+- [X] Create an application code that includes index.html, styles in a single style.css file (including a map file), and a jQuery file
+- [X] JQuery needs to be a dependency. Install this and track the dependency in pacakage.json
+- [X] Copy the jQuery.js file to the build/js/vendor/directory where Grunt runs
 - [ ] All JS code must be linted (using jshint) **before** being concatenated
 - [ ] All JS code must be tested **before** being concatenated
-
-- [ ] Create an application code that includes index.html, styles in a single style.css file (including a map file), and a jQuery file
-- [X] JQuery needs to be a dependency. Install this and track the dependency in pacakage.json
-- [ ] Copy the jQuery.js file to the build/js/vendor/directory where Grunt runs
-
 
 - [ ] Research: Attempt to concatenate all JS files into a single app.js file, and in a js directory.
 - [ ] Make sure things are good by running 'http-server build/'. Make sure all CSS and JS files load and check the "Network" tag in the developer console of Chrome to confirm.
@@ -66,6 +63,12 @@ This repo is also designed to get practice for setting up process automation usi
 - [ ] Write tests for the new-thought.js file. Make a **new** spec file.
 - [ ] Add code coverage with Karma. See how much of the source code my tests are running and edit to increase percentage.
 
+## How To Create a New Build:
+1. Run **npm install --save-dev grunt** in your terminal.
+2. Create **gruntfile.js** in root directory.
+3. Install Grunt plugins to use in gruntfile.
+4. Install appropriate devDependencies and dependencies for project. 
+5. Use initConfig function in Grunt file, and create aliases to run multiple tasks with one terminal command.
 
 By: [Jennifer Oakes](https://www.linkedin.com/in/jennifernicoleoakes/)
 

@@ -4,7 +4,7 @@ module.exports = function configureGrunt(gruntConfig) {
     clean: ['build/'], //shortcut to clean the build directory before making it again
 
     copy: { //grunt task name
-      copy: { //target name I created
+      copyHTML: { //target name I created
         files: [
           {
             cwd: 'src', //current working directory
@@ -13,7 +13,19 @@ module.exports = function configureGrunt(gruntConfig) {
             expand: true
           }
         ]
+      },
+
+      copyJquery: { //target name I created
+        files: [
+          {
+            cwd: 'src/js', //current working directory
+            src: [ 'jquery.js' ],
+            dest: 'build/js/vendor/',
+            expand: true
+          }
+        ]
       }
+
 
     },
 
@@ -52,6 +64,8 @@ module.exports = function configureGrunt(gruntConfig) {
         }
       }
     }
+
+
 
   });
   require('load-grunt-tasks')(gruntConfig);
