@@ -11,6 +11,16 @@ This repo is also designed to get practice for setting up process automation usi
   esc
 
   :wq
+
+  ---------------------
+
+  git checkout master
+
+  git merge phase-two
+
+  control 'C'
+
+  :q!
 ```
 
 ## Terminal Commands:
@@ -71,5 +81,6 @@ This repo is also designed to get practice for setting up process automation usi
 - [ ] Add code coverage with Karma. See how much of the source code my tests are running and edit to increase percentage.
 
 By: [Jennifer Oakes](https://www.linkedin.com/in/jennifernicoleoakes/)
+
 
 March 2017
